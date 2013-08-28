@@ -43,3 +43,24 @@ gem 'jbuilder', '~> 1.2'
 # gem 'debugger', group: [:development, :test]
 
 gem "ancestry"
+gem 'cancan'
+gem 'compass-rails', '~> 2.0.alpha.0'
+gem 'devise'
+gem 'figaro'
+gem 'pg'
+gem 'rolify'
+gem 'simple_form', '>= 3.0.0.rc'
+gem 'thin'
+gem 'zurb-foundation'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
+end
+
